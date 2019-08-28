@@ -17,13 +17,14 @@ if not os.path.exists("./docs/_themes/README"):
 
 
 here = os.path.abspath(os.path.dirname(__file__))
-with io.open(os.path.join(here, 'README.rst')) as f:
+with io.open(os.path.join(here, 'README.md')) as f:
     readme = f.read()
 
 setup(
-    name='flask-oidc',
+    name='flask-oidc-1.5.0-unofficial',
     description='OpenID Connect extension for Flask',
     long_description=readme,
+    long_description_content_type="text/markdown",
     url='https://github.com/puiterwijk/flask-oidc',
     author='Erica Ehrhardt, Patrick Uiterwijk',
     author_email='patrick@puiterwijk.org',
